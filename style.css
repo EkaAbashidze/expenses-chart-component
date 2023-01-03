@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F8E9DD;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chart, .chart-days {
+    display: flex;
+}
+
+.chart {
+    flex-direction: column;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+.chart-days {
+    gap: 12px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.chart p {
+    color: #92857A;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.eachChart {
+    width: 33px;
+    height: 150px;
+    background-color: #EC755D;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color .3s linear;
+    margin-bottom: 11px;
+}
+
+.eachChart:hover {
+    background-color: #FF9B86;
+}
+
+.balance-container {
+    width: 343px;
+    height: 97px;
+    background-color: #EC755D;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px 22px 20px;
+}
+
+.balance-container p, .balance-container h3 {
+    color: white;
+}
+
+.balance-container p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.balance-container h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.balance-container div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.main-container {
+    background-color: #FFFBF6;
+    width: 343px;
+    height: 421px;
+    border-radius: 10px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 24px 20px;
+}
+
+.main-container h2 {
+    color: #382314;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    padding-bottom: 52px;
+}
+
+.chart, .days {
+    align-items: center;
+    justify-content: center;
+}
+
+.chart, .days {
+    column-gap: 12px;
+}
+
+.days {
+    padding-bottom: 24px;
+}
+
+.line {
+    background-color: #F8E9DD;
+    width: 303px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 24px;
+}
+
+.total h3 {
+    color: #92857A;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.month-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.month-total div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.amount {
+    width: 70px;
+    height: 40px;
+    background-color: #382314;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFBF6;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 8px;
+    position: absolute;
+    top: -48px;
+    left: -20px;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.today {
+    background-color: #76B5BC;
+}
+
+.today:hover {
+    background-color: #B4E0E5;
+}
+
+@media screen and (min-width: 375px) {
+    .balance-container {
+        width: 540px;
+        height: 125px;
+        padding: 27px 39px 25px 32px;
+        border-radius: 20px;
+    }
+
+    .main-container {
+        width: 540px;
+        height: 511px;
+        padding: 32px 40px 41px 40px;
+        border-radius: 20px;
+    }
+
+    .chart-days {
+        gap: 18px;
+        padding-bottom: 32px;
+
+    }
+
+    .eachChart {
+        width: 50px;
+    }
+
+    .line {
+        width: 480px;
+        align-self: center;
+        margin-bottom: 32px;
+        padding: 1px;
+    }
+
+    .balance-container p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .balance-container h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .amount {
+        left: -10px;
+    }
+
+    .main-container h2 {
+        font-size: 32px;
+        line-height: 42px;
+        padding-bottom: 66px;
+    }
+
+    .chart p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .eachChart {
+        margin-bottom: 8px;
+    }
+
+    .total h3 {
+        font-size: 18px;
+        line-height: 23px;        
+    }
+
+    .total h1 {
+        font-size: 48px;
+        line-height: 62px;
+    }
+
+
+    .total h4 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+
+}

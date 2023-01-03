@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="balance-container">
+      <div>
+        <p>My balance</p>
+        <h3>$921.48</h3>
+      </div>
+
+      <svg
+        width="72"
+        height="48"
+        viewBox="0 0 72 48"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <circle fill="#382314" cx="48" cy="24" r="24" />
+          <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="main-container">
+      <h2>Spending - Last 7 days</h2>
+
+      <div class="chart-days">
+      </div>
+
+      <div class="line"></div>
+
+      <div class="total">
+        <h3>Total this month</h3>
+
+        <div class="month-total">
+          <h1>$478.33</h1>
+
+          <div>
+            <h4>+2.4%</h4>
+            <h3>from last month</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
